@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="vd.css" />
+    <title>spending list</title>
+</head>
+<body>
+    <h1>Daily spending list</h1>
+    <div class="container">
+        <aside>
+            <input type="text" placeholder="Note" id="themviec">
+            <input type="number" placeholder="soluong" id="themsoluong">
+            <input type="number" placeholder="Amount" id="themtien">
+            <button id="add" onclick="them()">Add</button>
+            <button id="tinhtong" onclick="tinhtong()">Total</button>
+            <button id="Reset" onclick="resetValue()">Reset</button>
+        </aside>
+        <div id="main">
+            <h2>
+                <strong>List</strong>
+                <strong id="quantity" >Quantity</strong>
+                <strong>Money</strong>
+            </h2>
+            <div class="viewlist">
+                <table  class="fulltb">
+                <tr>
+                    <td>
+                        <div id="hienviec">
+                            <table id="tableview"></table>
+                        </div>
+                    </td>
+                    <td>
+                        <div id="hiensoluong">
+                            <table  id="tableview1"></table>
+                        </div>
+                    </td>
+                    <td>
+                        <div id="hientien">
+                            <table  id="tableview2"></table>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            </div>
+                <div id="displaytong"></div>
+            </div>
+        </div>
+    </div>
+    <script src="vd.js"></script>
+</body>
+<div id="tableview3"></div>
+</html>
